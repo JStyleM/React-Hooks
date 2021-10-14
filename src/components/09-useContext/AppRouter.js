@@ -12,11 +12,10 @@ import { HomeScreen } from './HomeScreen';
 import { LoginScreen } from './LoginScreen';
 import { NavBar } from './NavBar';
 
-
 export const AppRouter = () => {
     return (
 
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <div>
             <NavBar />
                 <div className="container">
